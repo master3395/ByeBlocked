@@ -1,0 +1,42 @@
+{
+  "n": 5,
+  "recoveryish": [
+    {
+      "t": 1791668391767,
+      "level": "info",
+      "text": "[ByeBlocked] HealthMonitor: 'stageRenderPatch' appears to have failed, but a fallback is already active. No action needed. "
+    },
+    {
+      "t": 1791668406769,
+      "level": "info",
+      "text": "[ByeBlocked] HealthMonitor: 'stageRenderPatch' returned to normal. "
+    }
+  ],
+  "recent": [
+    {
+      "t": 1791668391767,
+      "level": "info",
+      "text": "[ByeBlocked] HealthMonitor: 'stageRenderPatch' appears to have failed, but a fallback is already active. No action needed. "
+    },
+    {
+      "t": 1791668391768,
+      "level": "info",
+      "text": "[ByeBlocked] The dedicated stage render patch appears inactive, but patchVoiceUserComponent is active and already covers blocked users in Stage/voice channels. No action needed. "
+    },
+    {
+      "t": 1791668399593,
+      "level": "info",
+      "text": "[ByeBlocked] patchStageRenderComponent: dedicated Stage seat component no longer found (likely merged into the voice-user row in a recent Discord update). No action needed - patchVoiceUserComponent and the DOM fallback already cover blocked users in Stage/voice channels. "
+    },
+    {
+      "t": 1791668406769,
+      "level": "info",
+      "text": "[ByeBlocked] HealthMonitor: 'stageRenderPatch' returned to normal. "
+    },
+    {
+      "t": 1791668491887,
+      "level": "info",
+      "text": "[ByeBlocked] patchPrivateChannelRowComponent: recipients/rawRecipients already filtered at the prototype level, skipping the row component patch (it's redundant here) "
+    }
+  ]
+}

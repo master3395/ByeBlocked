@@ -1,0 +1,172 @@
+{
+  "ui": {
+    "err": null,
+    "version": "2.9.0",
+    "labelsPresent": [
+      "Pinned messages",
+      "Mentions",
+      "Threads",
+      "Message notifications",
+      "Voice chat notifications",
+      "Check for updates automatically"
+    ],
+    "labelsAbsent": [],
+    "categories": [],
+    "stageWiring": {
+      "hasVoiceChannels": true,
+      "hasVoiceNotificationsOnStageApi": false,
+      "voiceChannelsEnabled": true,
+      "notifVoiceChat": true,
+      "badgeVoiceNotifications": true
+    },
+    "healthCheckSrc": null,
+    "messageWouldBeHidden": {
+      "authorOnly": true,
+      "mentionOnly": true,
+      "plain": false,
+      "messagesPlaceOff": false,
+      "defaultsMatchAuthorPath": true
+    },
+    "labelsAbsentExpectedMissing": [
+      "Spamming users",
+      "spammers"
+    ],
+    "labelsAbsentStillShowing": [],
+    "textSnippet": "WHO TO HIDE\nBlocked users\nIgnored users\nWHERE TO HIDE\nMessages\nPinned messages\nPinned messages panel and pin badges.\nInbox messages\nInbox / mentions inbox style surfaces when available.\nMessage preview in replies\nHide reply previews authored by filtered users.\nReplies to blocked messages\nHide messages that reply to a filtered user's message.\nMentions\nHide messages that mention filtered users (and mention chips).\nMember list\nAlso covers the Members page.\nVoice & Stage channels\nIncludes the activity panel and streams.\nGroup DMs\nAutocomplete\nMentions and the invite picker.\nMessage reactions\nThreads\nThread lists and thread entries owned by filtered users.\nChannel / group list\nPrivate channel / group list rows for filtered users.\nGroup notifications\nGroup notification / recent DM activity from ",
+    "health": {
+      "hasMonitor": true,
+      "checks": null
+    },
+    "blockedSampleIds": [
+      "149899170818293760",
+      "364083543711678465",
+      "713269144572788796"
+    ],
+    "typesKeys": [
+      "blocked",
+      "ignored"
+    ],
+    "hasSpammersSetting": false,
+    "shouldHideSpammerFlag": true,
+    "hostKept": true
+  },
+  "toggle": {
+    "err": null,
+    "steps": [
+      {
+        "label": "defaults",
+        "pins": true,
+        "mentions": true,
+        "threads": true,
+        "notifVoiceChat": true,
+        "stageHidesOnVoiceChannelsOnly": true,
+        "voiceChannels": true
+      },
+      {
+        "label": "all_off",
+        "pins": false,
+        "mentions": false,
+        "threads": false,
+        "notifVoiceChat": false,
+        "stageHidesOnVoiceChannelsOnly": true,
+        "voiceChannels": true
+      },
+      {
+        "label": "restored",
+        "pins": true,
+        "mentions": true,
+        "threads": true,
+        "notifVoiceChat": true,
+        "stageHidesOnVoiceChannelsOnly": true,
+        "voiceChannels": true
+      }
+    ],
+    "soundGate": {
+      "notifVoiceChatDefault": true,
+      "muteJoinLeave": true
+    }
+  },
+  "health": {
+    "err": null,
+    "healthKeys": [
+      "p",
+      "intervalMs",
+      "checks",
+      "_timer",
+      "_degraded"
+    ],
+    "domSampleCount": 34,
+    "totalMessageLis": 34,
+    "wouldFailOldIsBlockedGroup": 0,
+    "wouldFailShouldHideLeak": 0,
+    "interestingSamples": [],
+    "liveMessagesHealthOk": "entry-shape-unknown",
+    "entryKeys": [
+      "checkFn",
+      "fallbackFn",
+      "failStreak",
+      "failThreshold",
+      "totalFailures",
+      "degradedCount",
+      "lastHeartbeatAt",
+      "isExpectedFn",
+      "lastError"
+    ]
+  },
+  "updater": {
+    "err": null,
+    "wired": {
+      "start": true,
+      "checkAuto": true,
+      "fetchMeta": true
+    },
+    "meta": {
+      "version": "2.9.0",
+      "downloadUrl": "https://github.com/8ug8ird/ByeBlocked/releases/download/v2.9.0/ByeBlocked.plugin.js",
+      "htmlUrl": "https://github.com/8ug8ird/ByeBlocked/releases/tag/v2.9.0"
+    }
+  },
+  "console": {
+    "totalCaptured": 5,
+    "recoveryishCount": 2,
+    "recoveryish": [
+      {
+        "t": 1791668391767,
+        "level": "info",
+        "text": "[ByeBlocked] HealthMonitor: 'stageRenderPatch' appears to have failed, but a fallback is already active. No action needed. "
+      },
+      {
+        "t": 1791668406769,
+        "level": "info",
+        "text": "[ByeBlocked] HealthMonitor: 'stageRenderPatch' returned to normal. "
+      }
+    ],
+    "recent": [
+      {
+        "t": 1791668391767,
+        "level": "info",
+        "text": "[ByeBlocked] HealthMonitor: 'stageRenderPatch' appears to have failed, but a fallback is already active. No action needed. "
+      },
+      {
+        "t": 1791668391768,
+        "level": "info",
+        "text": "[ByeBlocked] The dedicated stage render patch appears inactive, but patchVoiceUserComponent is active and already covers blocked users in Stage/voice channels. No action needed. "
+      },
+      {
+        "t": 1791668399593,
+        "level": "info",
+        "text": "[ByeBlocked] patchStageRenderComponent: dedicated Stage seat component no longer found (likely merged into the voice-user row in a recent Discord update). No action needed - patchVoiceUserComponent and the DOM fallback already cover blocked users in Stage/voice channels. "
+      },
+      {
+        "t": 1791668406769,
+        "level": "info",
+        "text": "[ByeBlocked] HealthMonitor: 'stageRenderPatch' returned to normal. "
+      },
+      {
+        "t": 1791668491887,
+        "level": "info",
+        "text": "[ByeBlocked] patchPrivateChannelRowComponent: recipients/rawRecipients already filtered at the prototype level, skipping the row component patch (it's redundant here) "
+      }
+    ]
+  }
+}

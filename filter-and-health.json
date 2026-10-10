@@ -1,0 +1,64 @@
+{
+  "checksType": "Object",
+  "checkNames": [
+    "domRemovalGuardSwallowRate",
+    "dispatcherPatch",
+    "voiceStatesAltFilter",
+    "messageFilterEffectiveness",
+    "members",
+    "messages",
+    "forumPostPatch",
+    "stage",
+    "stageRenderPatch",
+    "callGrid",
+    "reactions",
+    "voice",
+    "voiceAudio",
+    "voiceUserComponentPatch",
+    "activityPanelPatch",
+    "voiceSound",
+    "groupDms",
+    "autocomplete",
+    "autocompleteRowPatch",
+    "inviteQueryModule",
+    "activePostsPopover",
+    "events",
+    "pinnedMessages"
+  ],
+  "messagesHealthOk": true,
+  "failStreak": 0,
+  "totalFailures": 0,
+  "degradedCount": 0,
+  "sampleAuthorId": "149899170818293760",
+  "defaults": {
+    "authorHidden": true,
+    "mentionHidden": true,
+    "wouldHideAuthor": true,
+    "wouldHideMention": true,
+    "wouldHidePlain": false,
+    "pins": true,
+    "mentions": true,
+    "threads": true
+  },
+  "mentionsOff": {
+    "mentionHidden": false,
+    "wouldHideMention": false,
+    "authorStillHidden": true
+  },
+  "pinsThreadsOff": {
+    "pins": false,
+    "threads": false
+  },
+  "stageApiKeys": [
+    "voiceChannelsEnabled"
+  ],
+  "notifVoiceChat": true,
+  "notifOff": {
+    "notifVoiceChat": false,
+    "voiceChannelsStillOn": true,
+    "stageStillOnlyVoiceChannels": true
+  },
+  "panelHasSpammers": false,
+  "panelHasNotifVoice": true,
+  "ready": true
+}
